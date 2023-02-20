@@ -1,14 +1,17 @@
 class PlacesController < ApplicationController
 
 def index
-    @test = rand(1..6)
-end
-
-def show
+    @places = Place.all
 end
 
 def new
+    @place = Place.new
 end
+
+def show
+
+end
+
 
 def create
 end

@@ -1,7 +1,8 @@
 class PostsController < ApplicationController
 
-def new
-end
+    def new
+        @post = Post.new
+    end
 
 def create
 end

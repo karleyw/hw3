@@ -1,0 +1,9 @@
+<h1>Create a new post</h1>
+
+<%= form_with :model => @post do |form| %>
+  <p>
+    <%= form.label "Activity" %>
+    <%= form.text_field "activity" %>
+  </p>
+  <%= form.submit %>
+<% end %>
