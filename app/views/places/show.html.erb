@@ -3,7 +3,15 @@
 
 <h2>Posts</h2>
 
-<% posts = Post.where({"place_id" => @place["id"]}) %>
+<% @posts = Post.where({"place_id" => @place["id"]}) %>
+
+<ul>
+  <% for post in @posts %>
+    <li>
+      <%= post["title"] %>
+    </li>
+  <% end %>
+</ul>
 
 
 <p>
