@@ -2,8 +2,16 @@
 
 <%= form_with :model => @post do |form| %>
   <p>
-    <%= form.label "Activity" %>
-    <%= form.text_field "activity" %>
+    <%= form.label "Title" %>
+    <%= form.text_field "title" %>
+  </p>
+  <p>
+    <%= form.label "Description" %>
+    <%= form.text_field "description" %>
+    <%= form.label "Posted on" %>
+    <%= form.text_field "posted_on" %>
+    <%= form.label "Place" %>
+    <%= form.text_field "place_id" %>
   </p>
   <%= form.submit %>
 <% end %>
